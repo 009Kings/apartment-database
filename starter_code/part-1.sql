@@ -12,5 +12,5 @@ CREATE TABLE property(
     id SERIAL PRIMARY KEY,
     name TEXT,
     units INT,
-    owner_id INT
+    owner_id INT references owner(id)
 );
